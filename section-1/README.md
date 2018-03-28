@@ -99,6 +99,12 @@ $ git merge new_branch
 * [Branching and Merging with GitKracken](https://support.gitkraken.com/working-with-repositories/branching-and-merging)
 * [Branch Management with SourceTree](https://confluence.atlassian.com/sourcetreekb/branch-management-785325799.html)
 
+I highly recommend configuring SSH keys for accessing remote repositories. Some of the GUI apps will handle this for you. More info here:
+
+* [SSH Keys at Git-SCM](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
+* [About SSH at GitHub](https://help.github.com/articles/about-ssh/)
+* [SSH Keys in GitKracken](https://support.gitkraken.com/integrations/authentication)
+
 [homebrew]: https://brew.sh/
 [github desktop]: https://desktop.github.com/
 [sourcetree]: https://www.sourcetreeapp.com/
