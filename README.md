@@ -21,7 +21,7 @@ Those readme files are written using _Markdown_, a super-simple, text-based mark
     * View project history
     * Reset to a previous commit
 
-2.  [**Build Tools**]() -- _in progress_
+2.  **Build Tools** -- _in progress_
 
     * Install node (includes npm)
     * Install Yarn (just because)
@@ -30,14 +30,14 @@ Those readme files are written using _Markdown_, a super-simple, text-based mark
     * PostCSS & Autoprefixer
     * Browsersync
 
-3.  [**Sass: Stylesheets evolved**]() -- _in progress_
+3.  **Sass: Stylesheets evolved** -- _in progress_
 
     * Basic variables (colors)
     * Basic units and math
     * Include files
     * Extend, mixins,
 
-4.  [**Next-level JavaScript**]() -- _in progress_
+4.  **Next-level JavaScript** -- _in progress_
     * Compile with Webpack
     * Use npm libraries
     * ES6 syntax via Babel
