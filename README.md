@@ -4,7 +4,7 @@ This repository introduces some of IOP's preferred tools and workflows.
 
 👋 &nbsp; Hello team! You all have full access to this repository so please feel free to add, edit or embellish anything here. Git is the glue that holds it all together and a terrific safety net. Go crazy, we can always roll back!
 
-![](https://gist.githubusercontent.com/joemaller/2eb446dbf557590a7c888777ff3cad01/raw/78ab02f8eac346c8525cd0992396a90d0312a2f8/game.jpg)
+![](https://gist.githubusercontent.com/joemaller/2eb446dbf557590a7c888777ff3cad01/raw/89a2250795087fe561c63f721d5c4fc2d856b63f/game.jpg)
 
 This project repository is divided into four sections, each with a matching directory. Each contains a readme with additional detail specific to that section.
 
