@@ -2,13 +2,13 @@
 
 The goal of this section is just to get comfortable with a basic Git workflow.
 
-We'll be using Git as a clean way of synchronizing our code and letting us collaborate remotely. The primary goal of this section is to push and pull code from a GitHub repository.
+At IOP we use Git as a clean way of synchronizing our code and letting us collaborate remotely. The primary goal of this section is to push and pull code from a GitHub repository.
 
 ## Installing Git
 
 First, Git needs to be installed. If you're on a Mac, I highly recommend installing [Homebrew][] first. Homebrew is a package manager which greatly simplifies installation of command line tools. Installation instructions are here: [brew.sh](https://brew.sh/)
 
-Git is a command line tool, but there are a number of GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. Use whichever you prefer.
+Git is a command line tool, but there are a number of cross-platform GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. Use whichever you prefer.
 
 * If you installed Homebrew, just run `brew install git`
 * [Command line Installers](https://git-scm.com/downloads)
@@ -58,10 +58,11 @@ You should now have a folder named tools-and-workflows on your computer with clo
 
 This section contains a few HTML files and some images.
 
-Commits are groups of saves. Please modify the files in this section and add or remove other files. Gather those changes by staging the files and commit them.
+Please modify the files in this section and add or remove other files. Gather those changes by staging the files and commit them. A commit is just a group of saves.
 
 All changes will be on your own computer until you push your commits back to GitHub.
 
+* [Git workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) (IOP mostly follows the "Centralized Workflow" model)
 * [Syncing your Branch with GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/syncing-your-branch/)
 * [Pushing and Pulling with GitKracken](https://support.gitkraken.com/working-with-repositories/pushing-and-pulling)
 * [Commit, Push, and Pull a repository on SourceTree](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html)
@@ -72,9 +73,19 @@ Every Git commit is a snapshot of the project's history and can be described by 
 
 GUI apps generally show the project history all the time. On the command line, run `git log` (then type `q` to quit).
 
+Past commits can be checked out or branched from. In extreme cases, the entire repository can even be reset to a previous commit.
+
 ### Where am I?
 
 `git status` is one of the most useful commands in Git. It reports the state of the repository, the working file tree, relationship to remote repos and which branch is active. All the GUI apps run this constantly to update their interfaces.
+
+### Ignoring files
+
+While we can choose to omit certain files from our repositories, Git includes a feature to make this easier. Adding a `.gitignore` to the top of a repository lets us define files, directories or file globs which should never be included. These are useful for preventing accidental inclusion of third-party libraries or filesystem junk like `.DS_Store` or `Thumbs.DB` files.
+
+* [gitignore documentation](https://git-scm.com/docs/gitignore)
+* [.gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+* [A managed WordPress .gitignore file](https://gist.github.com/joemaller/4f7518e0d04a82a3ca16)
 
 ### Additional Features to explore
 
