@@ -21,7 +21,7 @@ Those readme files are written using _Markdown_, a super-simple, text-based mark
     * View project history
     * Reset to a previous commit
 
-2.  [**Build Tools**](section-1)
+2.  [**Build Tools**](section-2)
 
     * Install node (includes npm)
     * Gulp and gulpfiles
