@@ -21,21 +21,20 @@ Those readme files are written using _Markdown_, a super-simple, text-based mark
     * View project history
     * Reset to a previous commit
 
-2.  **Build Tools** -- _in progress_
+2.  [**Build Tools**](section-1)
 
     * Install node (includes npm)
-    * Install Yarn (just because)
-    * Simple build: copy files to dist, compress images
     * Gulp and gulpfiles
-    * PostCSS & Autoprefixer
-    * Browsersync
+    * Simple build: copy files to dist, compress images
 
-3.  **Sass: Stylesheets evolved** -- _in progress_
+3.  **Stylesheets evolved: Sass & PostCSS** -- _in progress_
 
     * Basic variables (colors)
     * Basic units and math
     * Include files
     * Extend, mixins,
+    * PostCSS & Autoprefixer
+    * Browsersync
 
 4.  **Next-level JavaScript** -- _in progress_
     * Compile with Webpack
