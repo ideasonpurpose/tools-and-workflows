@@ -5,12 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch"
+    "start": "echo This section has no start task"
   },
   "author": "Joe Maller <joe@ideasonpurpose.com> (https://www.ideasonpurpose.com)",
-  "license": "CC-BY-4.0",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-imagemin": "^4.1.0"
-  }
+  "license": "CC-BY-4.0"
 }
