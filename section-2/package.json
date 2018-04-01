@@ -1,0 +1,16 @@
+{
+  "name": "section-2",
+  "version": "0.1.0",
+  "description": "IOP Tooling and Workflows: Section 2",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch"
+  },
+  "author": "Joe Maller <joe@ideasonpurpose.com> (https://www.ideasonpurpose.com)",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
