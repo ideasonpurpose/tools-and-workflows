@@ -98,7 +98,7 @@ One side effect of build processes are configuration and dot-files. The top-leve
 * **package.json** - This is a record of the project's dependencies, metadata, author info and configuration.
 * **package-lock.json** or **yarn.lock** - generated integrity files for verifying what was installed.
 * **.browserslistrc**, **.editorconfig**, **.eslint.js**, **webpack.config.js** and more - configuration for specific tools.
-* **node_modumes/** - this directory is created when installing node libraries
+* **node_modules/** - this directory is created when installing node libraries
 
 ---
 
