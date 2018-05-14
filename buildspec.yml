@@ -1,6 +1,6 @@
 version: 0.2
 artifacts:
   files:
-    - "builds/**/*"
+    - "**/*"
 
-  discard-paths: yes
+#   discard-paths: yes
