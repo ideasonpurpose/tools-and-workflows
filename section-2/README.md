@@ -10,14 +10,14 @@ Which is to say, don't get too comfortable. This landscape changes quickly.
 
 This section requires a tiny bit of terminal use. Here are a few essential terminal commands to know:
 
-* `cd` Change directory. Use this to change directories.
-* `ls` List the files and folders in your current directory.
-* `pwd` Print Working Directory, essentially "where am I?"
+- `cd` Change directory. Use this to change directories.
+- `ls` List the files and folders in your current directory.
+- `pwd` Print Working Directory, essentially "where am I?"
 
 Some tutorial links:
 
-* UNIX Tutorial for Beginners: [Lesson 1](https://w3.cs.jmu.edu/spragunr/CS139_S16/activities/unix_tutorial/unix1.html)
-* [Intro to the macOS Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
+- UNIX Tutorial for Beginners: [Lesson 1](https://w3.cs.jmu.edu/spragunr/CS139_S16/activities/unix_tutorial/unix1.html)
+- [Intro to the macOS Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
 
 A great mac-only terminal shortcut: Drag a folder from the Finder onto the Terminal icon to open a new window inside that directory.
 
@@ -27,7 +27,7 @@ First we need [node.js][node.js]. If you have Homebrew installed, just run `brew
 
 The **npm** command line tool is installed with node.js. **npm** refers to both the node package management app and the huge library of available packages at [npmjs.org](https://www.npmjs.com/). We'll use the app to to install some third-party tools and then kick off a build task.
 
-Recently, a facebook-sponsored clone of npm called [Yarn](https://yarnpkg.com/) has been earning a lot of praise. The examples here use **npm**, but Yarn is worth a look.
+Recently, a facebook-sponsored clone of npm called [Yarn](https://yarnpkg.com/) has been earning a lot of praise -- and users. The examples here use **npm**, but the two are interchangeable and **Yarn** is worth a look.
 
 ## Task Runners and Gulp
 
@@ -35,12 +35,12 @@ A task runner gathers together all the various tools used to compile and build a
 
 We generally use two primary commands:
 
-* **Build** (`npm run build`)<br>
-  Compiles the site from `src` into `dist`, sometimes generating zipped archives as well.
-* **Start** (`npm run start`)<br>
-  Starts a dev server and rebuilds the site whenever files are changed.
+- **Build** (`npm run build`)<br>
+  Generate a production-ready, compiled and compressed snapshot of the site in `dist`.
+- **Start** (`npm run start`)<br>
+  Starts a dev server and rebuilds the site whenever files are changed. Optimized for faster iteration.
 
-Our preferred task runner is [gulp][]. Gulp runs gulpfiles, which are just JavaScript files defining a set of tasks in code. The example gulpfile in this section contains one simple image optimization task.
+Our preferred task runners are [gulp][] and [webpack][]. Gulp runs gulpfiles, which are just JavaScript files defining a set of tasks in code. Webpack bundles everything in relation to a site's JavaScript files. We'll start with gulp. The example gulpfile in this section contains one simple image optimization task.
 
 ### Install some tools
 
@@ -54,7 +54,7 @@ $ ls
 README.md    gulpfile.js  package.json src
 ```
 
-Calling `npm run build` now will throw an error because none of the required packages have been installed yet. Our example gulpfile uses [gulp][] and [gulp-imagemin][], install them with this command:
+If we try calling `npm run build` now it will throw an error because none of the required packages have been installed yet. Our example gulpfile uses [gulp][] and [gulp-imagemin][], install them with this command:
 
 ```
 $ npm install gulp gulp-imagemin
@@ -89,16 +89,16 @@ We follow the `src`/`dist` convention for source code files and distribution art
 
 ### Don't commit build artifacts
 
-Do not not store build artifacts in Git. Since the site is the product of a totally deterministic and reproducible build process, contents of `dist` are disposable and can be regenerated at any time.
+Do not not store build artifacts in Git. Since the site is the product of a totally deterministic and reproducible build process, contents of `dist` are disposable and should be able to be regenerated at any time.
 
 ### What are all these extra files?
 
 One side effect of build processes are configuration and dot-files. The top-level of a repository may contain a number of these files:
 
-* **package.json** - This is a record of the project's dependencies, metadata, author info and configuration.
-* **package-lock.json** or **yarn.lock** - generated integrity files for verifying what was installed.
-* **.browserslistrc**, **.editorconfig**, **.eslint.js**, **webpack.config.js** and more - configuration for specific tools.
-* **node_modules/** - this directory is created when installing node libraries
+- **package.json** - This is a record of the project's dependencies, metadata, author info and configuration.
+- **package-lock.json** or **yarn.lock** - generated integrity files for verifying what was installed.
+- **.browserslistrc**, **.editorconfig**, **.eslint.js**, **webpack.config.js** and more - configuration for specific tools.
+- **node_modules/** - this directory is created when installing node libraries
 
 ---
 
@@ -111,4 +111,5 @@ One side effect of build processes are configuration and dot-files. The top-leve
 
 [node.js]: https://nodejs.org/en/
 [gulp]: https://gulpjs.com/
+[webpack]: https://webpack.js.org/
 [gulp-imagemin]: https://www.npmjs.com/package/gulp-imagemin
