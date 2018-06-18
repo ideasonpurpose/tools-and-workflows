@@ -6,28 +6,28 @@ At IOP we use Git as a clean way of synchronizing our code and letting us collab
 
 ## Installing Git
 
-First, Git needs to be installed. If you're on a Mac, I highly recommend installing [Homebrew][] first. Homebrew is a package manager which greatly simplifies installation of command line tools. Installation instructions are here: [brew.sh](https://brew.sh/)
+First, we need to be sure Git is installed. If you're using a Mac, I recommend installing the [Homebrew][] package manager first. Homebrew greatly simplifies installation of command line tools, installation instructions are here: [brew.sh](https://brew.sh/)
 
-Git is a command line tool, but there are a number of cross-platform GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. Use whichever you prefer.
+Git is a command line tool, but there are a number of cross-platform GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. The Visual Studio Code app also integrates a very nice Git client. All the GUI tools just put buttons over the same CLI text commands, so use which ever tool you prefer.
 
-* If you installed Homebrew, just run `brew install git`
-* [Command line Installers](https://git-scm.com/downloads)
-* [GitHub Desktop][]
-* [GitKracken][]
-* [SourceTree][]
-* [Visual Studio Code][]
+- If you installed Homebrew, just run `brew install git`
+- [Command line Installers](https://git-scm.com/downloads)
+- [GitHub Desktop][]
+- [GitKracken][]
+- [SourceTree][]
+- [Visual Studio Code][]
 
 ### Git terminology and workflow
 
 Some important Git terms include:
 
-* **Repository**<br>
+- **Repository**<br>
   A collection of the source code and project history
-* **Clone**<br>
+- **Clone**<br>
   Every repository is a clone
-* **Commit**<br>
+- **Commit**<br>
   Commits are collections of changes to files. These are the building blocks of a project’s history.
-* **Push and Pull**<br>
+- **Push and Pull**<br>
   These commands are how repositories talk to each other. Commits are sent between repositories.
 
 The basic workflow goes something like this:
@@ -39,33 +39,35 @@ The basic workflow goes something like this:
 
 ### Tutorial links
 
-* A great command line simulation: [GitHub 15 minute walkthrough](https://try.github.io)
-* A brief, gentle introduction: [Git for Designers](https://code.tutsplus.com/tutorials/git-for-designers--pre-54689)
-* How Git works: [Getting Started - Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
+- A great command line simulation: [GitHub 15 minute walkthrough](https://try.github.io)
+- A brief, gentle introduction: [Git for Designers](https://code.tutsplus.com/tutorials/git-for-designers--pre-54689)
+- How Git works: [Getting Started - Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
 ## Jumping in
 
 Let's start out by cloning this repository. At the top of this page, click the name of the repository to get back to the top level. Now click the green **Clone or download** button to reveal the cloning URL.
 
-* Command line: `git clone https://github.com/ideasonpurpose/tools-and-workflows.git`
-* [Clone with GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/cloning-a-repository-from-github-desktop/)
-* [Clone with GitKracken](https://support.gitkraken.com/working-with-repositories/open-clone-init)
-* [Clone with SourceTree](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
+- Command line: `git clone https://github.com/ideasonpurpose/tools-and-workflows.git`
+- [Clone with GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/cloning-a-repository-from-github-desktop/)
+- [Clone with GitKracken](https://support.gitkraken.com/working-with-repositories/open-clone-init)
+- [Clone with SourceTree](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
 
-You should now have a folder named tools-and-workflows on your computer with cloned copies of all the files in the project (and all its history).
+You should now have a folder named **tools-and-workflows** on your computer with cloned copies of all the files in the project (and all its history).
 
 ### Things to do
 
 This section contains a few HTML files and some images.
 
-Please modify the files in this section and add or remove other files. Gather those changes by staging the files and commit them. A commit is just a group of saves.
+Try modifying the files in this section and adding or removing other files. Gather those changes by staging the files and then commit them. A commit is just a group of saves.
 
-All changes will be on your own computer until you push your commits back to GitHub.
+All changes will be on your own computer until you push (sync) your commits back to GitHub.
 
-* [Git workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) (IOP mostly follows the "Centralized Workflow" model)
-* [Syncing your Branch with GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/syncing-your-branch/)
-* [Pushing and Pulling with GitKracken](https://support.gitkraken.com/working-with-repositories/pushing-and-pulling)
-* [Commit, Push, and Pull a repository on SourceTree](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html)
+- [Git workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) (IOP mostly follows the "Centralized Workflow" model)
+- [Syncing your Branch with GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/syncing-your-branch/)
+- [Pushing and Pulling with GitKracken](https://support.gitkraken.com/working-with-repositories/pushing-and-pulling)
+- [Commit, Push, and Pull a repository on SourceTree](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html)
+
+[![Git](https://imgs.xkcd.com/comics/git.png)](https://xkcd.com/1597/)
 
 ### Project History
 
@@ -73,7 +75,7 @@ Every Git commit is a snapshot of the project's history and can be described by 
 
 GUI apps generally show the project history all the time. On the command line, run `git log` (then type `q` to quit).
 
-Past commits can be checked out or branched from. In extreme cases, the entire repository can even be reset to a previous commit.
+Past commits can be checked out or branched from. In extreme cases, the entire repository can even be reset (rolled back) to a previous commit.
 
 ### Where am I?
 
@@ -81,11 +83,11 @@ Past commits can be checked out or branched from. In extreme cases, the entire r
 
 ### Ignoring files
 
-While we can choose to omit certain files from our repositories, Git includes a feature to make this easier. Adding a `.gitignore` to the top of a repository lets us define files, directories or file globs which should never be included. These are useful for preventing accidental inclusion of third-party libraries or filesystem junk like `.DS_Store` or `Thumbs.DB` files.
+While we can choose to omit certain files from our repositories, Git includes a feature to make this easier. Adding a `.gitignore` to the top of a repository lets us define files, directories or file globs which should never be included. These are useful for preventing accidental inclusion of third-party libraries or filesystem junk like `.DS_Store` and `Thumbs.DB` files.
 
-* [gitignore documentation](https://git-scm.com/docs/gitignore)
-* [.gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
-* [A managed WordPress .gitignore file](https://gist.github.com/joemaller/4f7518e0d04a82a3ca16)
+- [gitignore documentation](https://git-scm.com/docs/gitignore)
+- [.gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+- [A managed WordPress .gitignore file](https://gist.github.com/joemaller/4f7518e0d04a82a3ca16)
 
 ### Additional Features to explore
 
@@ -106,15 +108,15 @@ $ git checkout master
 $ git merge new_branch
 ```
 
-* [Branches in GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/making-changes-in-a-branch/)
-* [Branching and Merging with GitKracken](https://support.gitkraken.com/working-with-repositories/branching-and-merging)
-* [Branch Management with SourceTree](https://confluence.atlassian.com/sourcetreekb/branch-management-785325799.html)
+- [Branches in GitHub Desktop](https://help.github.com/desktop/guides/contributing-to-projects/making-changes-in-a-branch/)
+- [Branching and Merging with GitKracken](https://support.gitkraken.com/working-with-repositories/branching-and-merging)
+- [Branch Management with SourceTree](https://confluence.atlassian.com/sourcetreekb/branch-management-785325799.html)
 
-I highly recommend configuring SSH keys for accessing remote repositories. Some of the GUI apps will handle this for you. More info here:
+Configuring SSH keys for remote access makes connecting to remote repositories much easier. Some of the GUI apps will handle this for you. More info here:
 
-* [SSH Keys at Git-SCM](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
-* [About SSH at GitHub](https://help.github.com/articles/about-ssh/)
-* [SSH Keys in GitKracken](https://support.gitkraken.com/integrations/authentication)
+- [SSH Keys at Git-SCM](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
+- [About SSH at GitHub](https://help.github.com/articles/about-ssh/)
+- [SSH Keys in GitKracken](https://support.gitkraken.com/integrations/authentication)
 
 [homebrew]: https://brew.sh/
 [github desktop]: https://desktop.github.com/
