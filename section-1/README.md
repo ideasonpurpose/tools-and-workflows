@@ -118,6 +118,15 @@ Configuring SSH keys for remote access makes connecting to remote repositories m
 - [About SSH at GitHub](https://help.github.com/articles/about-ssh/)
 - [SSH Keys in GitKracken](https://support.gitkraken.com/integrations/authentication)
 
+---
+
+[Home](../)
+
+1.  **HTML back and forth with Git**
+2.  [Build Tools](../section-2)
+3.  [Stylesheets evolved: Sass & PostCSS](../section-3)
+4.  Next-level JavaScript (coming soon)
+
 [homebrew]: https://brew.sh/
 [github desktop]: https://desktop.github.com/
 [sourcetree]: https://www.sourcetreeapp.com/

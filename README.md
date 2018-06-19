@@ -10,36 +10,37 @@ This project repository is divided into four sections, each with a matching dire
 
 Those readme files are written using _Markdown_, a super-simple, text-based markup language that converts to HTML. Markdown has become a common baseline for writing styled documents in a technical context. It’s very easy to learn and the styling conventions and syntax result in documents which are highly readable even as plain text.
 
-* [Learn Markdown In 60 Seconds](http://commonmark.org/help/)
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) from GitHub
+- [Learn Markdown In 60 Seconds](http://commonmark.org/help/)
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) from GitHub
 
 ## Sections
 
 1.  [**HTML back and forth with Git**](section-1)
 
-    * Push / Pull updates
-    * View project history
-    * Reset to a previous commit
+    - Push / Pull updates
+    - View project history
+    - Reset to a previous commit
 
 2.  [**Build Tools**](section-2)
 
-    * Install node (includes npm)
-    * Gulp and gulpfiles
-    * Simple build: copy files to dist, compress images
+    - Install node (includes npm)
+    - Gulp and gulpfiles
+    - Simple build: copy files to dist, compress images
 
-3.  **Stylesheets evolved: Sass & PostCSS** -- _in progress_
+3.  [**Stylesheets evolved: Sass & PostCSS**](section-3)
 
-    * Basic variables (colors)
-    * Basic units and math
-    * Include files
-    * Extend, mixins,
-    * PostCSS & Autoprefixer
-    * Browsersync
+    - Basic variables (colors)
+    - Basic units and math
+    - Including files
+    - Functions and mixins
+    - PostCSS & Autoprefixer
+    - Browsersync
+    - Browserslist
 
 4.  **Next-level JavaScript** -- _in progress_
-    * Compile with Webpack
-    * Use npm libraries
-    * ES6 syntax via Babel
+    - Compile with Webpack
+    - Use npm libraries
+    - ES6 syntax via Babel
 
 ### Developer Guidelines
 

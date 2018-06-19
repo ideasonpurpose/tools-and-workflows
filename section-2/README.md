@@ -83,6 +83,10 @@ If everything worked correctly and you see output like the above (though more co
 
 This is a very basic pipeline, but the real power of gulp comes from combining a number of tasks and watching files for changes. We also fine-tune the configuration to better meet our needs.
 
+## Why call `npm run` instead of just calling `gulp`
+
+With npm script commands, all projects get a common interface, so production builds and development are the same regardless of what tools are underneath. In addition to masking the complexity of the build, devOps is separated from the front-end, so tooling can be iterated or changed without affecting ongoing development.
+
 ## Source and Distribution directories: `src` and `dist`
 
 We follow the `src`/`dist` convention for source code files and distribution artifacts. Most all of our work is done in the `src` directory, then the actual site deliverables are compiled into `dist`.
@@ -106,7 +110,7 @@ One side effect of build processes are configuration and dot-files. The top-leve
 
 1.  [HTML back and forth with Git](../section-1)
 2.  **Build Tools**
-3.  Stylesheets evolved: Sass & PostCSS (coming soon)
+3.  [Stylesheets evolved: Sass & PostCSS](../section-3)
 4.  Next-level JavaScript (coming soon)
 
 [node.js]: https://nodejs.org/en/
