@@ -1,0 +1,147 @@
+/**
+ * Sass supports standard multi-line CSS comments like this.
+ *
+ * CSS-style block comments will appear in non-compressed CSS output.
+ *
+ * `src/sass/style.scss` has single-line comments too.
+ */
+
+// Sass also supports single-line comments like this.
+// These comments never appear in CSS output, they're only for SCSS authors.
+
+.active {
+  color: orange;
+}
+
+.off {
+  color: #9a1b35;
+}
+
+/**
+ * Variables
+ */
+
+$primary: #9a1b35;
+$title-font: "Oswald", "Arial Narrow", Arial, sans-serif;
+
+.button {
+  border: 2px solid $primary;
+  color: $primary;
+}
+.label {
+  color: $primary;
+  font-family: $title-font;
+}
+
+/**
+ * Nesting
+ */
+
+ul.custom {
+  list-style: none;
+
+  li {
+    float: left;
+    margin: 6px;
+    padding: 0;
+  }
+}
+
+.copy {
+  p {
+    & + blockquote {
+      color: blue;
+    }
+    &:first-child {
+      font-size: 150%;
+    }
+  }
+}
+
+/**
+ * Math
+ */
+
+// .pic-frame should maintain an 7x5 ratio
+.pic-frame {
+  width: 100%;
+  background: papayawhip;
+  padding-bottom: 5 / 7 * 100%;
+  padding-bottom: percentage(5/7); // this also works
+}
+
+$height: 4.25rem;
+$font-size: 23/16 * 1rem;
+
+.subtitle {
+  font-size: $font-size;
+  padding-top: $height - $font-size;
+}
+
+/**
+ * Functions and Mixins
+ */
+
+.example {
+  padding-top: percentage(9/16);
+  color: rgba(200, 80, 125, 0.5);
+  color: rgba(teal, 1/3); // named colors and math!
+  color: mix(tomato, bisque, percentage(5/8)); // nested functions!
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  @include clearfix;
+  margin: 1rem auto;
+}
+.box {
+  @include clearfix;
+}
+
+// First, name and define our breakpoints
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+);
+
+@mixin breakpoint-up($point) {
+  $w: map-get($breakpoints, $point);
+
+  @media only screen and (min-width: $w) {
+    @content;
+  }
+}
+
+.banner {
+  color: crimson;
+  font-size: 2rem;
+  @include breakpoint-up(sm) {
+    color: orchid;
+  }
+  @include breakpoint-up(md) {
+    color: turquoise;
+  }
+  @include breakpoint-up(lg) {
+    color: teal;
+    font-size: 3rem;
+  }
+}
+
+/**
+ * Partials
+ */
+
+/* A standard Sass partial */
+@import "partials/module";
+
+/* A CSS native import which gets hoisted to the top of the output file */
+@import "partials/legacy.css";
+

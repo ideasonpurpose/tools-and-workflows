@@ -1,0 +1,22 @@
+{
+  "name": "section-3",
+  "version": "0.1.0",
+  "description": "IOP Tooling and Workflows: Section 3",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch"
+  },
+  "author": "Joe Maller <joe@ideasonpurpose.com> (https://www.ideasonpurpose.com)",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "autoprefixer": "^8.6.3",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "normalize.css": "^8.0.0",
+    "postcss-import": "^11.1.0"
+  }
+}
