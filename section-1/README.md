@@ -8,7 +8,7 @@ At IOP we use Git as a clean way of synchronizing our code and letting us collab
 
 First, we need to be sure Git is installed. If you're using a Mac, I recommend installing the [Homebrew][] package manager first. Homebrew greatly simplifies installation of command line tools, installation instructions are here: [brew.sh](https://brew.sh/)
 
-Git is a command line tool, but there are a number of cross-platform GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. The Visual Studio Code app also integrates a very nice Git client. All the GUI tools just put buttons over the same CLI text commands, so use which ever tool you prefer.
+Git is a command line tool, but there are a number of cross-platform GUI apps like [GitHub Desktop][], [GitKracken][] or [SourceTree][] which are great alternatives. The [Visual Studio Code app][visual studio code] also integrates a very nice Git client. All the GUI tools just put buttons over the same CLI text commands, so use which ever tool you prefer.
 
 - If you installed Homebrew, just run `brew install git`
 - [Command line Installers](https://git-scm.com/downloads)
