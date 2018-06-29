@@ -39,7 +39,6 @@ The basic workflow goes something like this:
 
 ### Tutorial links
 
-- A great command line simulation: [GitHub 15 minute walkthrough](https://try.github.io)
 - A brief, gentle introduction: [Git for Designers](https://code.tutsplus.com/tutorials/git-for-designers--pre-54689)
 - How Git works: [Getting Started - Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
