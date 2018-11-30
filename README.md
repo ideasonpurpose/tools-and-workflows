@@ -49,6 +49,7 @@ Please also look over [IOP's Developer Guidelines](https://github.com/ideasonpur
 ## About
 
 [![iop_logo](https://avatars1.githubusercontent.com/u/2059022?s=100&v=4)][iop]
+
 An [Ideas On Purpose][iop] project.
 
 ### License
